@@ -415,7 +415,8 @@
   background: none;
 }
 
-.real-home .home-text h1, h2{
+.real-home .home-text h1,
+.real-home .home-text h2{
   color: white;
   padding: 2px;
   background: none;
