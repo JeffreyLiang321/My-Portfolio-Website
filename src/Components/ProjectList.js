@@ -20,11 +20,20 @@ const ProjectList = ({ projects }) => {
     setIsPopupOpen(newPopups.some((status) => status));
   };
 
+  const togglePopup = (index) => {
+    const newPopups = [...buttonPopups];
+    newPopups[index] = !newPopups[index]; // This will toggle the state
+    setButtonPopups(newPopups);
+    setIsPopupOpen(newPopups.some((status) => status));
+  };
+
   return (
+    <div className = "overall" > 
+      <h2> Coding Projects </h2>
     <div className={`project-list ${isPopupOpen ? 'popup-open' : ''}`}>
-      <h2>Coding Projects</h2>
+      
       {projects.map((project, index) => (
-        <div className="project-preview" key={project.id}>
+        <div className="project-preview" key={project.id} onClick={() => togglePopup(index)}>
           <button onClick={() => openPopup(index, project)} style={{ textDecoration: 'none' }}>
             <h2>{project.title}</h2>
           </button>
@@ -40,6 +49,7 @@ const ProjectList = ({ projects }) => {
           )}
         </div>
       ))}
+    </div>
     </div>
   );
 }

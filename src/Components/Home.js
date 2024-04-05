@@ -1,13 +1,14 @@
 
 
 // setting up a picture, and also word text as an intro
-const Home = () => {
+import ExperienceHeader from "./ExperienceHeader";
+const Resume = () => {
     const openResume = () => {
         window.open('/data/Jeffrey_Liang_Resume.pdf', '_blank');
       };
     
     return (
-        <div className="home">
+        <div className="resume">
         <div className="wrapper">
             <img src = "/data/headshot.jpeg" alt="image?"/>
             <div className="text-box">
@@ -17,7 +18,7 @@ const Home = () => {
                 prediction models. Besides computer science, I am involved in BTCG(Brown Technology Consulting Club) and am currently 
                 involved in a pitch for a business model for the Dojo Entreprenuership Program. 
                 Thanks for viewing my portfolio website! </p>
-                <button onClick={openResume}> Download CV </button>
+                <button className = "btn" onClick={openResume}> Download CV </button>
             </div>
         </div>
     </div> 
@@ -25,4 +26,4 @@ const Home = () => {
     );
 }
  
-export default Home;
+export default Resume;

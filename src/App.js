@@ -7,7 +7,7 @@ import Projects from './Components/Project';
 import ProjectDetails from './Components/ProjectDetails';
 import Experience from './Components/Experience';
 import Contact from './Components/Contact';
-import Resume from './Components/Resume';
+import Homer from './Components/Homer';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Routes>
           <Route path='/' element={
             <>
-            <Resume/>
+            <Homer/>
             </>
           } />
           <Route path = '/Projects' element = {<Projects />}/>

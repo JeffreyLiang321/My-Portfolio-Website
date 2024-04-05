@@ -1,6 +1,6 @@
-const Resume = () => {
+const Home = () => {
     return ( 
-        <div className="real-home">
+        <div className="home">
             <img src="/data/home-background.jpg" alt="image?" />
             <div className = "home-text">
             <h1> Jeffrey Liang</h1>
@@ -9,4 +9,4 @@ const Resume = () => {
         </div>
      );
 }
-export default Resume;
+export default Home;

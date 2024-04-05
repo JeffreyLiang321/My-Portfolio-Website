@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaTags, FaGithub } from "react-icons/fa";
+import { FaG, FaLink } from "react-icons/fa6";
+
+
 
 // Correctly destructure props, including `project` from the props object
 const Popup = ({ trigger, setTrigger, children, project }) => {
@@ -25,13 +29,17 @@ const Popup = ({ trigger, setTrigger, children, project }) => {
         <h3> Constructing: </h3>
         <p>Extracting match statistics across the top 20 male ATP players, I combined factors and excluded less meaningful statistics by filtering the data through MySQL workbench. Then, by building an interactive UI element, I’m letting my website display head-by-head data showing the difference in stats between players.
 Later on, through learning neural networks I hope to develop a machine learning algorithm with a friend to predict match outcomes according to name matchups.</p>
+          <div className="tags-item">
+                    <FaTags size={25} className="icon"/>
+                    <p> Selenium Webdriver, Python, MySQL Workbench</p>
+          </div>
         </>
         )}
 
         {/* Tenis App */}
         {project.id ==="2" && (
         <>
-        <div className="popup-image">
+        <div className="app-popup-image">
         {images}
         </div>
         <h3> Idea Background: </h3>
@@ -40,18 +48,37 @@ Later on, through learning neural networks I hope to develop a machine learning 
         <p>  The background of the app uses Firebase. Using Firestore Database, I’m able to track and update user information including their posts, login information, and interactions with other players and coaches. Using Firebase Authentication, I’m able to authenticate whether a user’s login information is recorded or correct. Lastly, I use Firebase Storage to store necessary profile pictures, tennis images, and videos according to what player’s post. </p>
         <h3> The Actual App: </h3>
         <p>  Using Xcode, I coded the entire app in the Swift language. The app was constructed with an MVC model in mind. The main view controllers cost of a tennis posts page which divulges into more specific post pages dedicated to each tennis technique, a create posts page for players to make new posts, a profile page to view coaches and players, and a tracking page that tracks the best responses from coaches and helps coaches see how they were percieved with their responses. To see all the code behind the app, check out my GitHub repository. To checkout my website dedicated to the app providing my complete thought process and numerous mini-updates going over each page and their functions, check out my blog.</p>
-        <p>GitHub: <a href="https://github.com/JeffreyLiang321/Smooth-Tennis" target="_blank" rel="noopener noreferrer">https://github.com/JeffreyLiang321/Smooth-Tennis</a></p>
-        <p>Website: <a href="https://www.appjourneyjeffrey.com/" target="_blank" rel="noopener noreferrer">https://www.appjourneyjeffrey.com/</a></p>
+        <div className="github-item">
+                    <FaGithub size={25} className="icon"/>
+                    <a href="https://github.com/JeffreyLiang321/Smooth-Tennis" target="_blank" rel="noopener noreferrer">App Code</a>
+          </div>
+        <div className="links-item">
+                    <FaLink size={25} className="icon"/>
+                    <a href="https://www.appjourneyjeffrey.com/" target="_blank" rel="noopener noreferrer">App Simulation Blog</a>
+        </div>
+        <div className="tags-item">
+                    <FaTags size={25} className="icon"/>
+                    <p> Xcode, Swift, Firebase</p>
+          </div>
         </>
         )} 
 
         {/* Drone Wing */}
         {project.id === "3" && (
           <>
+          <img src="/data/DroneEndGraph.png" alt="image?" />
+          <h3>Project Abstract</h3>
           <p>
             For this project, I was assisted by an STJU applied mathematics professor. Nowadays, more and more unmanned aerial vehicles are used in the logistics industry. Yet only large drones like the Global Hawk, are capable of carrying lots of heavy packages which smaller common delivery drones can’t do. Still, they need to be charged very often making them inefficient in practical use. We hope to solve these issues by reducing the weight of large drone wings by using an elastic transportation network based on energy optimization. This would help extend the work time of these drones and allowing for maximum transportation amount. We first figured out the total elastic potential energy of the wings and the gravity potential energy. Then we minimized the total energy to find the best geometric value(radius of each pipeline within the wings). Next, simulated on MATLAB, wings were built according to the pipeline wing radius and the total energy result was updated continuously to constantly minimize the energy with a more ideal pipeline radius. We expect a final pipeline elastic structure similar to that of a dragonfly’s wing with minimum total energy that will significantly help reduce the weight of large drone wings. This project will help design significantly lighter wings of drones based on elastic transportation networks mainly through MATLAB simulations. Normal delivery drones can then be expanded in size and utilize these newly designed wings to transport more products while flying for long periods without constant recharging.
           </p>
-          <p>Full Website Link: <a href="https://www.hillpublisher.com/UpFile/202307/20230731173237.pdf" target="_blank" rel="noopener noreferrer">Full Project Paper</a></p>
+          <div className="links-item">
+                    <FaLink size={25} className="icon"/>
+                    <a href="https://www.hillpublisher.com/UpFile/202307/20230731173237.pdf" target="_blank" rel="noopener noreferrer">Full Project Paper</a>
+          </div>
+          <div className="tags-item">
+                    <FaTags size={25} className="icon"/>
+                    <p> Applied Mathematics, Matlab, Machine Learning</p>
+          </div>
           </>
         )}
 
@@ -59,7 +86,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
         {project.id === "4" && (
           <>
           <h3> Project Question: </h3>
-          <p> How can driver’s use a low cost and computational requiring way to make correct decisions and safely maneuver narrow roads that also have people and objects present? </p>
+          <p> How can drivers use a low cost and computational requiring way to make correct decisions and safely maneuver narrow roads that also have people and objects present? </p>
           <h3> Hypothesis: </h3>
           <p> By using just one pair of left and right infrared sensors and a single ultrasound sensor to substitute for the uses of a car radar, combined with a SSD video detection camera and a Raspberry Pie computer board connected to an Intel Neural Compute Stick, this method will not only lower costs but also lower computational requirements for navigating this driver scenario.</p>
           <h3> Procedure: </h3>
@@ -67,6 +94,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
           <p> First, I had to construct the Raspbot Car. Then, I checked and modified the existing 
             python code for the infrared sensors, motor wheels, ultrasound sensor, and camera of the vehicle. </p>
           {/* <img src = "/data/robocar photos/CarTest-1.gif" alt="image?"/> */}
+          <div className="car-1-popup-image">
           <video width="320" height="240" controls>
             <source src={`data/Robocar Photos/CarTest-1-ezgif.com-gif-to-mp4-converter.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
@@ -84,6 +112,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
             Your browser does not support the video tag.
           </video>
           </div>
+          </div>
 
           <div className="Car-Model-Part">
           <p>     
@@ -94,15 +123,17 @@ Later on, through learning neural networks I hope to develop a machine learning 
             4) Use the model to detection the person and vehicle  <br/>
             5) Return the result based on the classification to the camera display screen  <br/>
           </p>
-          <img src = "/data/robocar photos/OpenVino.png" alt="image?"/>
-          <video width="320" height="240" controls>
+          <div className="car-2-popup-image">
+          <img className = "top-image" src = "/data/robocar photos/OpenVino.png" alt="image?"/>
+          <video className = "bottom-image" width="320" height="240" controls>
             <source src={`data/Robocar Photos/ModelTest-1-ezgif.com-gif-to-mp4-converter.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <video width="320" height="240" controls>
+          <video className = "bottom-image" width="320" height="240" controls>
             <source src={`data/Robocar Photos/ModelTest-2-ezgif.com-gif-to-mp4-converter.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          </div>
           </div>
 
           <div className="Car-Testing-Part">
@@ -110,11 +141,14 @@ Later on, through learning neural networks I hope to develop a machine learning 
             Now that the classification model is incoporated, we can modify the controls
             to avoid bikes, vehicles, or people. In the testing trials, the robocar follows two basic logical frameworks:
           </p>
+          <div className="car-3-popup-image">
           <img src = "/data/robocar photos/Framework1.png" alt="image?"/>
           <img src = "/data/robocar photos/Framework2.png" alt="image?"/>
+          </div>
           <p>Finally, we can initiate our testing trials for cases where
             an object is in front, to the left or right, or offers no movable path.
           </p>
+          <div className="car-1-popup-image">
           <video width="320" height="240" controls>
             <source src={`data/Robocar Photos/TrialTest-1.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
@@ -132,6 +166,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
             Your browser does not support the video tag.
           </video>
           </div>
+          </div>
 
           <div className="Car-Final">
             <p> Overall, this project has enabled me to create an innovate but simple 
@@ -143,13 +178,26 @@ Later on, through learning neural networks I hope to develop a machine learning 
               and I hope to one day develop a detection model myself and continue this project on.
             </p>
           </div>
+          <div className="tags-item">
+                    <FaTags size={25} className="icon"/>
+                    <p> OpenVino, SSD-Vision-Detection, Python</p>
+          </div>
           </>
         )}
         {project.id === "5" && (
           <>
+          <img src="/data/home-background.jpg" alt="image?" />
           <h3>
             Created own personal website for showing resume, projects, and experiences. Used JAVASCRIPT and CSS under React framework
           </h3>
+          <div className="github-item">
+                    <FaGithub size={25} className="icon"/>
+                    <a href="https://github.com/JeffreyLiang321/My-Portfolio-Website" target="_blank" rel="noopener noreferrer">Website Code</a>
+          </div>
+          <div className="tags-item">
+                    <FaTags size={25} className="icon"/>
+                    <p> CSS, Javascript, React-App</p>
+          </div>
           </>
         )}
 
