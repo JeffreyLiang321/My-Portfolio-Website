@@ -96,7 +96,6 @@ Later on, through learning neural networks I hope to develop a machine learning 
           <div className="Car-Building Part">
           <p> First, I had to construct the Raspbot Car. Then, I checked and modified the existing 
             python code for the infrared sensors, motor wheels, ultrasound sensor, and camera of the vehicle. </p>
-          {/* <img src = "/data/robocar photos/CarTest-1.gif" alt="image?"/> */}
           <div className="car-1-popup-image">
           <video width="320" height="240" controls>
             <source src={`data/Robocar Photos/CarTest-1-ezgif.com-gif-to-mp4-converter.mp4`} type="video/mp4" />
@@ -126,8 +125,8 @@ Later on, through learning neural networks I hope to develop a machine learning 
             4) Use the model to detection the person and vehicle  <br/>
             5) Return the result based on the classification to the camera display screen  <br/>
           </p>
+          <img src={`${process.env.PUBLIC_URL}/data/Robocar Photos/OpenVino.png`} alt="huh?" />
           <div className="car-2-popup-image">
-          <img className = "top-image" src = "/data/robocar photos/OpenVino.png" alt="image?"/>
           <video className = "bottom-image" width="320" height="240" controls>
             <source src={`data/Robocar Photos/ModelTest-1-ezgif.com-gif-to-mp4-converter.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
@@ -145,8 +144,8 @@ Later on, through learning neural networks I hope to develop a machine learning 
             to avoid bikes, vehicles, or people. In the testing trials, the robocar follows two basic logical frameworks:
           </p>
           <div className="car-3-popup-image">
-          <img src={`${process.env.PUBLIC_URL}/data/robocar photos/Framework1.png`} alt="image?" />
-          <img src={`${process.env.PUBLIC_URL}/data/robocar photos/Framework2.png`} alt="image?" />
+          <img src={`${process.env.PUBLIC_URL}/data/Robocar Photos/Framework1.png`} alt="image?" />
+          <img src={`${process.env.PUBLIC_URL}/data/Robocar Photos/Framework2.png`} alt="image?" />
           </div>
           <p>Finally, we can initiate our testing trials for cases where
             an object is in front, to the left or right, or offers no movable path.
