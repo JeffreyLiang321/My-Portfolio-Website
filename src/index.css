@@ -169,45 +169,36 @@
 }
 
 /* ProjectList styles */
-
-/* .project-list {
-  padding-top: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 15px;
-  width: fit-content;
-}
-
-.project-list .project-preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  height: 150px;
-  width: 250px;
-  border-radius: 10px;
-  padding: 10px;
-  color: white;
-  cursor: pointer;
-  overflow: hidden;
-  
-} */
+/* 
 .overall h2 {
   margin-top: 2%;
   text-align: center;
+} */
+
+.project-header {
+  margin-top: 2%;
+  text-align: center;
+  height: auto;
+}
+
+.project-header button:disabled {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  width: auto;
+  text-transform: uppercase;
+  transform: skew(-21deg);
 }
 
 .project-list {
-  padding-top: 5%;
+  padding-top: 4%;
   display: flex;
   flex-wrap: wrap; /* Allow the items to wrap to the next line */
   align-items: center;
   justify-content: space-around; /* This will space your items nicely */
-  margin: 0 auto;
   gap: 60px 15px;
 }
 
@@ -218,14 +209,15 @@
   justify-content: center;
   text-align: center;
   height: 175px;
-  width: 27%; /* Slightly decrease the width */
+  width: 26%; /* Slightly decrease the width */
   border-radius: 10px;
   padding: 10px;
   color: white;
   cursor: pointer;
   overflow: hidden;
-  margin: 0 1.5%; /* Slightly decrease the margin */
+  /* margin: 0 1.5%; Slightly decrease the margin */
 }
+
 
 /* Your nth-of-type styles remain the same */
 
@@ -295,6 +287,10 @@
   height: 80%;
   max-width: 640px;
   background-color: #FFF;
+}
+
+.popup-inner .h2-color {
+  background-color: #D0D0BA;
 }
 
 .popup-inner .close-btn {
@@ -528,7 +524,9 @@
   align-items: center;
   padding-left: 7%;
   padding-top: 1%; 
-  margin-bottom: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #a22c2c;
 }
 
 .experience .rows .icon {

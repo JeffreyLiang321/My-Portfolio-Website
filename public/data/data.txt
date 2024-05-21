@@ -1,6 +1,6 @@
 {
   "projects": [
-    { "title": "Tennis Statistics Webscraper",
+    { "title": "Tennis Statistics Webscraper(Current)",
     "id": "1",
     "img1": "/data/web-scraping-diagram.png"
      },

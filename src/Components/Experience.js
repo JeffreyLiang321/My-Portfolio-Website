@@ -8,7 +8,7 @@ const Experience = () => {
       <ExperienceHeader />
       <div className="rows">
         <FaDotCircle size={25} className="icon" />
-        <img src="/data/Kognitiv-Edge.png" alt="Kognitiv Edge" />
+        <img src={`${process.env.PUBLIC_URL}/data/Kognitiv-Edge.png`} alt="image?" />
         <div className="info">
           <div className="details">
             <h2> Kognitiv Edge </h2>
@@ -19,6 +19,31 @@ const Experience = () => {
             - Using terraform and microsoft azure with an intern team.<br />
             - Applying skills of continuous integration and continuous delivery, infrastructure as code.
           </p>
+        </div>
+      </div>
+      
+      <div className="rows">
+        <FaDotCircle size={25} className="icon" />
+        <img src={`${process.env.PUBLIC_URL}/data/Brown.jpg`} alt="image?" />
+        <div className="info">
+          <div className="details">
+            <h2> Brown University </h2>
+            <h3> September 2023 - Present, Undergraduate Degree </h3>
+          </div>
+          <p>
+            - Concentrating in Computer Science and Economics joint major
+          </p>
+        </div>
+      </div>
+      
+      <div className="rows">
+        <FaDotCircle size={25} className="icon" />
+        <img src={`${process.env.PUBLIC_URL}/data/SAS.jpg`} alt="image?" />
+        <div className="info">
+          <div className="details">
+            <h2> Shanghai American School Pudong </h2>
+            <h3> August 2019 - June 2023, High School Degree </h3>
+          </div>
         </div>
       </div>
     </div>

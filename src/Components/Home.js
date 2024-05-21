@@ -4,13 +4,13 @@
 import ExperienceHeader from "./ExperienceHeader";
 const Resume = () => {
     const openResume = () => {
-        window.open('/data/Jeffrey_Liang_Resume.pdf', '_blank');
+        window.open(`${process.env.PUBLIC_URL}/data/Jeffrey_Liang_Resume.pdf`, '_blank');
       };
     
     return (
         <div className="resume">
         <div className="wrapper">
-            <img src = "/data/headshot.jpeg" alt="image?"/>
+            <img src={`${process.env.PUBLIC_URL}/data/headshot.jpeg`} alt="image?" />
             <div className="text-box">
                 <h2>Welcome To My Website</h2>
                 <p> Hi everyone, I'm Jeffrey Liang. I'm a current freshmen studying Computer Science and Economics at Brown University. 

@@ -17,9 +17,12 @@ const Popup = ({ trigger, setTrigger, children, project }) => {
         <button className="close-btn" onClick={() => setTrigger(false)}>
           close
         </button>
-        {/* Now, `project` is correctly received from props, and we can access its properties */}
+        <div className="h2-color">
         <h2>{project.title}</h2>
+        </div>
         {children}
+        {/* Now, `project` is correctly received from props, and we can access its properties */}
+        
 
         {/* Tennis Webscraper */}
         {project.id ==="1" && (
@@ -27,7 +30,7 @@ const Popup = ({ trigger, setTrigger, children, project }) => {
         <h3> Idea Background: </h3>
         <p> In this project, I tried familiarizing myself with the general framework of BeautifulSoup. After trying to scrape multiple websites like Etsy where websites often had dynamic html elements, I searched for multiple solutions to handle dynamic content. Eventually, I came to Selenium Webdriver, a tool for automating web applications that interact with web pages directly instead of downloading and filtering static content. By combining BeautifulSoup and Selenium Webdriver, I was able to automate web browser scraping of tennis statistics via the tennis abstract website.</p>
         <h3> Constructing: </h3>
-        <p>Extracting match statistics across the top 20 male ATP players, I combined factors and excluded less meaningful statistics by filtering the data through MySQL workbench. Then, by building an interactive UI element, I’m letting my website display head-by-head data showing the difference in stats between players.
+        <p>Extracting match statistics across the top 20 male ATP players, I working to combine certain factors and excluded less meaningful statistics by filtering the data through MySQL workbench. Then, by building an interactive UI element, I want to let my website display head-by-head data showing the difference in stats between players.
 Later on, through learning neural networks I hope to develop a machine learning algorithm with a friend to predict match outcomes according to name matchups.</p>
           <div className="tags-item">
                     <FaTags size={25} className="icon"/>
@@ -187,9 +190,9 @@ Later on, through learning neural networks I hope to develop a machine learning 
         {project.id === "5" && (
           <>
           <img src="/data/home-background.jpg" alt="image?" />
-          <h3>
-            Created own personal website for showing resume, projects, and experiences. Used JAVASCRIPT and CSS under React framework
-          </h3>
+          <p>
+            Created own personal website for showing resume, projects, and experiences. Used Javascript and CSS under React framework
+          </p>
           <div className="github-item">
                     <FaGithub size={25} className="icon"/>
                     <a href="https://github.com/JeffreyLiang321/My-Portfolio-Website" target="_blank" rel="noopener noreferrer">Website Code</a>

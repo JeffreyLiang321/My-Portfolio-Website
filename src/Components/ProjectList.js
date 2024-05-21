@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Popup from "./Popup";
+import ProjectHeader from "./ProjectHeader";
 
 const ProjectList = ({ projects }) => {
   const [buttonPopups, setButtonPopups] = useState(Array(projects.length).fill(false));
@@ -29,7 +30,7 @@ const ProjectList = ({ projects }) => {
 
   return (
     <div className = "overall" > 
-      <h2> Coding Projects </h2>
+      <ProjectHeader/>
     <div className={`project-list ${isPopupOpen ? 'popup-open' : ''}`}>
       
       {projects.map((project, index) => (
