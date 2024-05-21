@@ -486,7 +486,14 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
+  transition: transform 0.3s ease;
+  
 }
+
+.contact-item:hover {
+    transform: scale(1.2);
+}
+
 
 .contact-item a {
   color: black; 
@@ -496,11 +503,6 @@
 
 .contact-item a:hover {
   color: orange; 
-}
-
-.contact-item .icon {
-  color: orange; 
-  margin-bottom: 4px; 
 }
 
 /* Experience style */

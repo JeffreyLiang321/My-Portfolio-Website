@@ -69,7 +69,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
         {/* Drone Wing */}
         {project.id === "3" && (
           <>
-          <img src="/data/DroneEndGraph.png" alt="image?" />
+          <img src={`${process.env.PUBLIC_URL}/data/DroneEndGraph.png`} alt="image?" />
           <h3>Project Abstract</h3>
           <p>
             For this project, I was assisted by an STJU applied mathematics professor. Nowadays, more and more unmanned aerial vehicles are used in the logistics industry. Yet only large drones like the Global Hawk, are capable of carrying lots of heavy packages which smaller common delivery drones can’t do. Still, they need to be charged very often making them inefficient in practical use. We hope to solve these issues by reducing the weight of large drone wings by using an elastic transportation network based on energy optimization. This would help extend the work time of these drones and allowing for maximum transportation amount. We first figured out the total elastic potential energy of the wings and the gravity potential energy. Then we minimized the total energy to find the best geometric value(radius of each pipeline within the wings). Next, simulated on MATLAB, wings were built according to the pipeline wing radius and the total energy result was updated continuously to constantly minimize the energy with a more ideal pipeline radius. We expect a final pipeline elastic structure similar to that of a dragonfly’s wing with minimum total energy that will significantly help reduce the weight of large drone wings. This project will help design significantly lighter wings of drones based on elastic transportation networks mainly through MATLAB simulations. Normal delivery drones can then be expanded in size and utilize these newly designed wings to transport more products while flying for long periods without constant recharging.
@@ -145,8 +145,8 @@ Later on, through learning neural networks I hope to develop a machine learning 
             to avoid bikes, vehicles, or people. In the testing trials, the robocar follows two basic logical frameworks:
           </p>
           <div className="car-3-popup-image">
-          <img src = "/data/robocar photos/Framework1.png" alt="image?"/>
-          <img src = "/data/robocar photos/Framework2.png" alt="image?"/>
+          <img src={`${process.env.PUBLIC_URL}/data/robocar photos/Framework1.png`} alt="image?" />
+          <img src={`${process.env.PUBLIC_URL}/data/robocar photos/Framework2.png`} alt="image?" />
           </div>
           <p>Finally, we can initiate our testing trials for cases where
             an object is in front, to the left or right, or offers no movable path.
@@ -189,7 +189,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
         )}
         {project.id === "5" && (
           <>
-          <img src="/data/home-background.jpg" alt="image?" />
+          <img src={`${process.env.PUBLIC_URL}/data/home-background.jpg`} alt="image?" />
           <p>
             Created own personal website for showing resume, projects, and experiences. Used Javascript and CSS under React framework
           </p>
