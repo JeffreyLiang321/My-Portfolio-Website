@@ -1,0 +1,29 @@
+{
+  "projects": [
+    { "title": "Tennis Statistics Webscraper(Current)",
+    "id": "1",
+    "img1": "/data/web-scraping-diagram.png"
+     },
+    { "title": "Smooth Tennis App Simulation",
+    "id": "2",
+    "img1": "/data/HomePage.png",
+    "img2": "/data/ViewPage.png"
+    },
+    { "title": "Drone Wing Energy Optimization Project",
+    "id": "3",
+    "img1": "/data/DroneIntialGraph.png",
+    "img2": "/data/DroneEndGraph.png"
+    },
+    { "title": "SSD Vision Assisted Robocar",
+    "id": "4",
+    "img1": "/data/Robocar.png",
+    "img2": "/data/RobocarShell.png"
+    },
+    { "title": "Portfolio Website",
+    "id": "5",
+    "img1": "/data/Robocar.png",
+    "img2": "/data/RobocarShell.png"
+    }
+  ]
+}
+
