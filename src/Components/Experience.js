@@ -6,6 +6,21 @@ const Experience = () => {
   return (
     <div className="experience">
       <ExperienceHeader />
+
+      <div className="rows">
+        <FaDotCircle size={25} className="icon" />
+        <img src={`${process.env.PUBLIC_URL}/data/Xiaomi1.png`} alt="image?" />
+        <div className="info">
+          <div className="details">
+            <h2> Xiaomi Technology </h2>
+            <h3> June 2024 - August 2024, Internship </h3>
+          </div>
+          <p>
+            - Worked within Xiaomi phone department in exploring and dictating current leading AI models for multiple medias <br />
+            - Helped form technical reports stating the fundamental strengths within model architectures, and methods for improving inference performance.<br />
+          </p>
+        </div>
+      </div>
       <div className="rows">
         <FaDotCircle size={25} className="icon" />
         <img src={`${process.env.PUBLIC_URL}/data/Kognitiv-Edge.png`} alt="image?" />
@@ -47,6 +62,8 @@ const Experience = () => {
         </div>
       </div>
     </div>
+
+    
   );
 };
 
