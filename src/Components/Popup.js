@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaTags, FaGithub } from "react-icons/fa";
+import { FaTags, FaGithub} from "react-icons/fa";
 import { FaG, FaLink } from "react-icons/fa6";
 
 
@@ -186,7 +186,22 @@ Later on, through learning neural networks I hope to develop a machine learning 
           </div>
           </>
         )}
+
         {project.id === "5" && (
+          <>
+          <img src={`${process.env.PUBLIC_URL}/data/Blue_Harbor.png`} alt="image?" style={{ width: '200px', height: 'auto' }} />
+          <p>
+            I helped co-found Blue Harbor Club, an organization across multiple international schools mainly in Shanghai. We collaborate with several local autism service centers to find solutions to help the autism population in China. Our main agenda is to create and distribute autism-friendly videos teaching skills of self-sufficiency in everyday tasks. 
+            Currently, we are unable to host an online databse of our own videos yet due to restrictions but have distributed our videos to local autism centers and their online channels.
+          </p>
+          <div className="github-item">
+                    <FaLink size={25} className="icon"/>
+                    <a href="https://blue-harbor.org/index.html#home" target="_blank" rel="noopener noreferrer">Website Link</a>
+          </div>
+          </>
+        )}
+
+        {project.id === "6" && (
           <>
           <img src={`${process.env.PUBLIC_URL}/data/home-background.jpg`} alt="image?" />
           <p>
