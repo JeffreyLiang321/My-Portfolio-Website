@@ -27,7 +27,7 @@ const Experience = () => {
         <div className="info">
           <div className="details">
             <h2> Kognitiv Edge </h2>
-            <h3> January 2024 - Present, Internship </h3>
+            <h3> January 2024 - August 2024, Internship </h3>
           </div>
           <p>
             - Working with startup company Kognitiv Edge on backup development.<br />
