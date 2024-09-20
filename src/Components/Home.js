@@ -4,7 +4,7 @@
 import ExperienceHeader from "./ExperienceHeader";
 const Resume = () => {
     const openResume = () => {
-        window.open(`${process.env.PUBLIC_URL}/data/Jeffrey_Liang_Resume_Recent.pdf`, '_blank');
+        window.open(`${process.env.PUBLIC_URL}/data/Resume_2.0.pdf`, '_blank');
       };
     
     return (
