@@ -19,8 +19,13 @@
     "img1": "/data/Robocar.png",
     "img2": "/data/RobocarShell.png"
     },
-    { "title": "Portfolio Website",
+    { "title": "Blue Harbor Club",
     "id": "5",
+    "img1": "",
+    "img2": ""
+    },
+    { "title": "Portfolio Website",
+    "id": "6",
     "img1": "/data/Robocar.png",
     "img2": "/data/RobocarShell.png"
     }
