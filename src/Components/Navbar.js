@@ -12,8 +12,8 @@ const Navbar = () => {
     return ( <nav className="navbar">
       <h1>Jeffrey Liang</h1>
       <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/About">About Me</Link>
+        <Link to="/">About Me</Link>
+        {/* <Link to="/About">About Me</Link> */}
         <Link to="/Projects">Projects</Link>
         <Link to="/Experience">Experiences</Link>
         <button onClick={navigateToContacts} style={{

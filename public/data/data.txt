@@ -4,6 +4,11 @@
     "id": "1",
     "img1": "/data/web-scraping-diagram.png"
      },
+         { "title": "Beya App(Current)",
+    "id": "5",
+    "img1": "",
+    "img2": ""
+    },
     { "title": "Smooth Tennis App Simulation",
     "id": "2",
     "img1": "/data/HomePage.png",
@@ -18,11 +23,6 @@
     "id": "4",
     "img1": "/data/Robocar.png",
     "img2": "/data/RobocarShell.png"
-    },
-    { "title": "Blue Harbor Club",
-    "id": "5",
-    "img1": "",
-    "img2": ""
     },
     { "title": "Portfolio Website",
     "id": "6",

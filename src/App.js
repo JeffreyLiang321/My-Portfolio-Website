@@ -15,10 +15,10 @@ function App() {
         <Navbar />
         <div className="Content">
           <Routes>
-            <Route path='/' element={<Homer />} />
+            {/* <Route path='/' element={<Homer />} /> */}
             <Route path='/Projects' element={<Projects />} />
             <Route path='/Experience' element={<Experience />} />
-            <Route path='/About' element={<Home />} />
+            <Route path='/' element={<Home />} />
             <Route path='/Contacts' element={<Contact />} />
             {/* Add a catch-all route to redirect to home */}
             <Route path='*' element={<Navigate to="/" />} />

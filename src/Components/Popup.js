@@ -189,16 +189,28 @@ Later on, through learning neural networks I hope to develop a machine learning 
 
         {project.id === "5" && (
           <>
-          <img src={`${process.env.PUBLIC_URL}/data/Blue_Harbor.png`} alt="image?" style={{ width: '200px', height: 'auto' }} />
+          
+          <div className="beya-images-container">
+            <img src={`${process.env.PUBLIC_URL}/data/Beya1.png`} alt="Beya App Screenshot 1" className="beya-image" />
+            <img src={`${process.env.PUBLIC_URL}/data/Beya2.png`} alt="Beya App Screenshot 2" className="beya-image" />
+          </div>
           <p>
-            I helped co-found Blue Harbor Club, an organization across multiple international schools mainly in Shanghai. We collaborate with several local autism service centers to find solutions to help the autism population in China. Our main agenda is to create and distribute autism-friendly videos teaching skills of self-sufficiency in everyday tasks. 
-            Currently, we are unable to host an online databse of our own videos yet due to restrictions but have distributed our videos to local autism centers and their online channels.
+          <h3> Current Progress: </h3>
+          &nbsp;&nbsp;&nbsp; I've recently joined a sophomore student startup Beya as a technical project lead. Beya is a B2B app focused on
+            assisting small to medium size businesses sell more effectively and efficiently in person. The core features Beya
+            include easy inventory management, proximity-based features to see what other vendors are in a fixed radius/event, minimum-fee
+            tap to pay transactions through the phone, and business analytics to track sales progress. 
+            </p>
+            <p>
+            &nbsp;&nbsp;&nbsp; Currently, we have served 20+ local vendors and even processed 700+ sales transactions through hosting 8 events at Brown University. The app infrastructure uses react-native, depending
+            on Expo to deploy to mobile applications, Firebase to record information in an easy document-based structure, while using AWS to manage running servers
+            and Stripe API to process transactions. Currently, we are now entering the Apple Review Stage.
           </p>
           <div className="github-item">
-                    <FaLink size={25} className="icon"/>
-                    <a href="https://blue-harbor.org/index.html#home" target="_blank" rel="noopener noreferrer">Website Link</a>
+            <FaLink size={25} className="icon"/>
+            <a href="https://www.instagram.com/usebeya/" target="_blank" rel="noopener noreferrer">Beya Instagram Account</a>
           </div>
-          </>
+        </>
         )}
 
         {project.id === "6" && (
