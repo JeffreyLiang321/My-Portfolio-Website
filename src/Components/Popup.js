@@ -25,19 +25,7 @@ const Popup = ({ trigger, setTrigger, children, project }) => {
         
 
         {/* Tennis Webscraper */}
-        {project.id ==="1" && (
-        <>
-        <h3> Idea Background: </h3>
-        <p> In this project, I tried familiarizing myself with the general framework of BeautifulSoup. After trying to scrape multiple websites like Etsy where websites often had dynamic html elements, I searched for multiple solutions to handle dynamic content. Eventually, I came to Selenium Webdriver, a tool for automating web applications that interact with web pages directly instead of downloading and filtering static content. By combining BeautifulSoup and Selenium Webdriver, I was able to automate web browser scraping of tennis statistics via the tennis abstract website.</p>
-        <h3> Constructing: </h3>
-        <p>Extracting match statistics across the top 20 male ATP players, I working to combine certain factors and excluded less meaningful statistics by filtering the data through MySQL workbench. Then, by building an interactive UI element, I want to let my website display head-by-head data showing the difference in stats between players.
-Later on, through learning neural networks I hope to develop a machine learning algorithm with a friend to predict match outcomes according to name matchups.</p>
-          <div className="tags-item">
-                    <FaTags size={25} className="icon"/>
-                    <p> Selenium Webdriver, Python, MySQL Workbench</p>
-          </div>
-        </>
-        )}
+
 
         {/* Tenis App */}
         {project.id ==="2" && (
@@ -65,6 +53,28 @@ Later on, through learning neural networks I hope to develop a machine learning 
           </div>
         </>
         )} 
+
+{project.id ==="5" && (
+        <>
+        <div className="video-container">
+        <video 
+  width="640" 
+  height="360" 
+  controls 
+  
+>
+            <source src={`${process.env.PUBLIC_URL}/data/Docferral.mp4`} type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+        <h3> Pitch Background: </h3>
+        <p> During my freshman spring semester, I participated in Brown’s Innovation Dojo program, where I worked with a team of three to develop and pitch Docferral, a startup idea aimed at helping primary care and private practice doctors connect and conduct electronic patient health referrals. To validate our concept, we conducted numerous interviews with private practice and primary care physicians, earning support from leading doctors at HO’OLA, a prominent Hawaiian network of independent physicians. Guided by mentors and case studies, we crafted a compelling business value proposition, conducted a competitor analysis in the telehealth and medical space, and created a minimum viable product (MVP) for Docferral. We also developed a revenue model and expansion strategy, culminating in a polished final pitch, which I presented to showcase our comprehensive vision.</p>
+          <div className="tags-item">
+                    <FaTags size={25} className="icon"/>
+                    <p> Pitch Presentation, Market Analysis, Business Proposal</p>
+          </div>
+        </>
+        )}
 
         {/* Drone Wing */}
         {project.id === "3" && (
@@ -187,7 +197,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
           </>
         )}
 
-        {project.id === "5" && (
+        {project.id === "1" && (
           <>
           
           <div className="beya-images-container">
@@ -206,7 +216,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
             on Expo to deploy to mobile applications, Firebase to record information in an easy document-based structure, while using AWS to manage running servers
             and Stripe API to process transactions. Currently, we are now entering the Apple Review Stage.
           </p>
-          <div className="github-item">
+          <div className="github-Beya-item">
             <FaLink size={25} className="icon"/>
             <a href="https://www.instagram.com/usebeya/" target="_blank" rel="noopener noreferrer">Beya Instagram Account</a>
           </div>
@@ -238,5 +248,7 @@ Later on, through learning neural networks I hope to develop a machine learning 
     </div>
   ) : "";
 };
+
+
 
 export default Popup;
