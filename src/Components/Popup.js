@@ -56,19 +56,13 @@ const Popup = ({ trigger, setTrigger, children, project }) => {
 
 {project.id ==="5" && (
         <>
-        <div className="video-container">
-        <video 
-  width="640" 
-  height="360" 
-  controls 
-  
->
-            <source src={`${process.env.PUBLIC_URL}/data/Docferral.mp4`} type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-    </div>
+        <img src={`${process.env.PUBLIC_URL}/data/Docferral.png`} alt="image?" />
         <h3> Pitch Background: </h3>
         <p> During my freshman spring semester, I participated in Brown’s Innovation Dojo program, where I worked with a team of three to develop and pitch Docferral, a startup idea aimed at helping primary care and private practice doctors connect and conduct electronic patient health referrals. To validate our concept, we conducted numerous interviews with private practice and primary care physicians, earning support from leading doctors at HO’OLA, a prominent Hawaiian network of independent physicians. Guided by mentors and case studies, we crafted a compelling business value proposition, conducted a competitor analysis in the telehealth and medical space, and created a minimum viable product (MVP) for Docferral. We also developed a revenue model and expansion strategy, culminating in a polished final pitch, which I presented to showcase our comprehensive vision.</p>
+        <div className="github-item">
+            <FaLink size={25} className="icon"/>
+            <a href="https://youtu.be/ywj8ohK4qTY?si=7vtjb4MtF1iFqOvF" target="_blank" rel="noopener noreferrer">Pitch Presentation Video</a>
+          </div>
           <div className="tags-item">
                     <FaTags size={25} className="icon"/>
                     <p> Pitch Presentation, Market Analysis, Business Proposal</p>
