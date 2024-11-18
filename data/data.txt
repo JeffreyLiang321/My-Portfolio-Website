@@ -1,14 +1,14 @@
 {
   "projects": [
-    { "title": "Tennis Statistics Webscraper(Current)",
+    { "title": "Beya App(Current)",
     "id": "1",
-    "img1": "/data/web-scraping-diagram.png"
-     },
-         { "title": "Beya App(Current)",
-    "id": "5",
     "img1": "",
     "img2": ""
     },
+    { "title": "Innovation Dojo Pitch",
+    "id": "5",
+    "img1": "/data/web-scraping-diagram.png"
+     },
     { "title": "Smooth Tennis App Simulation",
     "id": "2",
     "img1": "/data/HomePage.png",
